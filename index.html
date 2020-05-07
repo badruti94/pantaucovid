@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantau Covid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <audio src="./assets/audio.mp3" id="audio" type="" controls style="display: none;"></audio>
+    <ul class="kotak">
+        <li><img class="kotakan" src="./assets/img/1.png" alt="" srcset=""></li>
+        <li><img class="kotakan" src="./assets/img/2.png" alt="" srcset=""></li>
+        <li><img class="kotakan" src="./assets/img/3.png" alt="" srcset=""></li>
+        <li><img class="kotakan" src="./assets/img/4.png" alt="" srcset=""></li>
+        <li><img class="kotakan" src="./assets/img/5.png" alt="" srcset=""></li>
+    </ul>
+    <div class="suara">
+        <i id="suara" class="fas fa-volume-up fa-lg"></i>
+    </div>
+    <div class="tgl">
+
+    </div>
+    <div class="data">
+        <form action="" style="width: 12rem;">
+            <select class="form-control" name="" id="select">
+                <option value="" selected>Indonesia</option>
+                <option value="">Provinsi</option>
+                <option value="">Dunia</option>
+            </select>
+        </form>
+        <div class="table-wrapper">
+            <table id="indonesia" class="table table-borderless table-striped table-light text-left"
+                style="width: 1rem; display: ;">
+                <tr class=" bg-warning">
+                    <td>Positif</td>
+                    <td></td>
+                    <td class="positif"></td>
+                </tr>
+                <tr style="background-color: rgb(177, 87, 87);">
+                    <td>Meninggal</td>
+                    <td></td>
+                    <td class="meninggal"></td>
+                </tr>
+                <tr class="bg-success">
+                    <td>Sembuh</td>
+                    <td></td>
+                    <td class="sembuh"></td>
+                </tr>
+            </table>
+            <table id="provinsi" class="table bg-light" style="width: 50%;display: none;">
+                <thead>
+                    <tr>
+                        <th width="1" scope="col">No</th>
+                        <th scope="col">Provinsi</th>
+                        <th scope="col">Positif</th>
+                        <th scope="col">Meninggal</th>
+                        <th scope="col">Sembuh</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--  <tr>
+                        <th scope="row">1</th>
+                        <td>Daerah Istimewa Yogyakarta</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr> -->
+
+
+                </tbody>
+            </table>
+            <table id="dunia" class="table bg-light" style="width: 50%;display: none;">
+                <thead>
+                    <tr>
+                        <th width="1" scope="col">No</th>
+                        <th scope="col">Negara</th>
+                        <th scope="col">Positif</th>
+                        <th scope="col">Meninggal</th>
+                        <th scope="col">Sembuh</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+    <div class="quotes-wrapper">
+        <div class="quotes">
+
+        </div>
+    </div>
+    <div class="dev">
+        <a style="color: white;" target="_blank" href="https:fb.com/badru.saja.58">by Badru</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment-with-locales.min.js"></script>
+    <script src="./assets/js/jquery-2.1.4.min.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
