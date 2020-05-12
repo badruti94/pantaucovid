@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div id="tes"></div>
     <audio src="./assets/audio.mp3" id="audio" type="" controls style="display: none;"></audio>
     <ul class="kotak">
         <li><img class="kotakan" src="./assets/img/1.png" alt="" srcset=""></li>
@@ -101,8 +102,14 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment-with-locales.min.js"></script>
     <script src="./assets/js/jquery-2.1.4.min.js"></script>
-    <script src="./assets/js/data.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/script.js"></script> -->
+    <script>
+		$.get('https://api.kawalcorona.com/indonesia/', (data)=>{
+			console.log(data[0].name);
+			$('#indonesia .positif').text(data[0].positif);
+		});
+	</script>
 </body>
 
 </html>

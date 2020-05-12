@@ -1,5 +1,16 @@
-$.get('https://api.kawalcorona.com/indonesia', (data) => {
-    isiDataIndo(data[0]);
+$.get('https://api.kawalcorona.com/indonesia/', (data) => {
+    console.log(data[0].name);
+    $('#indonesia .positif').text(data[0].positif);
+});
+const isiDataIndo = data => {
+    $('#indonesia .positif').text(data.positif);
+    $('#indonesia .meninggal').text(data.meninggal);
+    $('#indonesia .sembuh').text(data.sembuh);
+};
+
+
+/* $.get('https://api.kawalcorona.com/indonesia', (data) => {
+    isiDataIndo(data);
 });
 
 const isiDataIndo = data => {
@@ -100,4 +111,4 @@ $('#suara').click(() => {
         $('#suara').addClass('fa-volume-up');
     }
 
-});
+}); */
